@@ -1,9 +1,38 @@
-# 영문자, 숫자, 특수 문자가 섞여 있는 문자열을 입력받는다. 숫자와 특수문자들만 뽑아서 문자열 만들어라
-string = input("Enter on string :")
-for i in range(len(string)):
-    if string[i].isalpha():
-        print(string[i],end='')
-        i += 1
+#1
+def my_join(str1, str2):
+    if str1.isalpha() or str2.isalpha():
+        str = str1 + str2
+        #str = set(str)
+        return str
+    else: 
+        print("문자 형태를 입력하세요.")
+my_join('안녕하세요',","'반가워요')
+
+#my_join('123','456')
+#my_join("!!!","###")
+
+
+
+결과)
+'안녕하세요,반가워요'
+문자 형태를 입력하세요.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # 2
 def my_split(str, ch):
