@@ -1,0 +1,58 @@
+# 영문자, 숫자, 특수 문자가 섞여 있는 문자열을 입력받는다. 숫자와 특수문자들만 뽑아서 문자열 만들어라
+string = input("Enter on string :")
+for i in range(len(string)):
+    if string[i].isalpha():
+        print(string[i],end='')
+        i += 1
+
+# 2
+def my_split(str, ch):
+  split_list = str.split(ch)
+  return split_list
+
+my_split('abcde','c')
+
+#3
+def my_max(number):
+  max_number = number[0]
+  for i in range(1, len(number)):
+    if max_number < number[i]:
+      max_number = number[i]
+    else :
+      continue
+  return max_number
+my_max([1,2,3,7,5,6,100,555,55,44,3])
+
+#4
+def my_sum(number):
+  sum_number=0
+  for i in range(len(number)):
+    sum_number += int(number[i])
+  return sum_number
+
+my_sum([1,3,3,4,5,6])
+
+#5
+def my_avg(number):
+  sum_number=0
+  avg_number = 0
+  for i in range(len(number)):
+    sum_number += int(number[i])
+  avg_number = sum_number/len(number)
+  return avg_number
+
+my_avg([1,2,3,4,5,6])
+
+#6
+min_number=''
+def my_min(number):
+  min_number = number[0]
+  for i in range(1, len(number)):
+    if min_number > number[i]:
+      min_number = number[i]
+    else:
+      continue;
+  return min_number
+
+my_min([1,2,6,2,5,6])
+
